@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+
+h1, h2, h4 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p, ul, ol, .item {
+    font-family: "Outfit", sans-serif;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+h4 {
+    color: hsl(332, 51%, 32%);
+}
+
+.container {
+    margin: 15vh auto;
+    width: 40vw;
+    position: relative;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1vh 4vw;
+}
+
+.box1, .box3, .box4, .box5 {
+    margin: 3vw auto;
+}
+
+.box1 h1, p{
+    margin-top: 15px;
+}
+
+img {
+    width: 40vw;
+    border-radius: 5px;
+}
+
+.box2 {
+    background-color: hsl(330, 100%, 98%);
+    padding: 15px;
+}
+
+.box2 ul {
+    padding: 0 15px;
+}
+
+.box2 li {
+    margin: 10px 0;
+}
+
+.box3, .box4 {
+    border-bottom: 1px solid black;
+}
+
+.box3 ul {
+    padding: 15px;
+}
+
+.box3 li {
+    margin: 10px 0;
+}
+
+.box4 ol {
+    padding: 15px;
+}
+
+.box4 li {
+    margin: 10px 0;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.item div {
+    position: relative;
+}
+
+.item > div:nth-child(1) {
+    top: 17px;
+}
+
+.item > div:nth-child(2) {
+    color: hsl(14, 45%, 36%);
+    left: 50%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
