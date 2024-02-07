@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    background-color:  hsl(233, 47%, 7%);
+}
+
+.content {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80vw; 
+    height: 60vh;
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.left {
+    width: 32vw;
+    padding: 8vh 4vw;
+}
+
+.left .head {
+    font-size: 1.3vw;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+#purple {
+    color: hsl(277, 64%, 61%);
+}
+
+.left .para {
+    margin-top: 3vh;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 90%;
+}
+
+.left .sections {
+    width: 80%;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.item span {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+.item p {
+    margin-top: 3px;
+    font-weight: 400;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.right {
+    background-image: url("./images/image-header-desktop.jpg");
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 40vw;
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 600px) {
+
+    .content {
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 85vw;
+        height: 85vh;
+        display: flex;
+        background-color: hsl(244, 38%, 16%);
+        flex-direction: column-reverse;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+    
+    .right {
+        border-radius: 10px;
+        background-image: url("./images/image-header-desktop.jpg");
+        background-color: hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+        background-size: cover;
+        width: 100%;
+        height: 30%;
+    }
+    
+    .left {
+        text-align: center;
+        width: calc(100% - 16vw);
+        height: calc(70% - 8vh);
+        padding: 4vh 8vw;
+    }
+
+    .left .head {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .left .head h1 {
+        font-size: 7vw;
+    }
+
+    .left .para p{
+        font-size: 3.3vw;
+        line-height: 3vh;
+        text-align: center;
+        width: 100%;     
+    }
+
+    .left .sections {
+        margin-top: 2.2vh;
+        width: 100%;
+        height: 50%;
+    }
+
+    .item span {
+        font-size: 7vw;
+    }
+
+    .item p {
+        font-size: 3.3vw;
+    }
+
+    .left .sections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attribution {
+        height: 5vh;
+    }
+
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
