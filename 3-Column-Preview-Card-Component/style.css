@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+ 
+
+.container {
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container > div:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.container > div:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container > div:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+.item {
+    height: 60%;
+    padding: 3vw;
+}
+
+
+.item img {
+    width: 3vw;
+}
+
+
+.item .head {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin-top: 3vh;
+}
+
+.item .para {
+    margin-top: 3vh;
+    height: 50%;
+}
+
+.item p {
+    font-size: 1vw;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 4vh;
+}
+
+
+.item button {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1vw;
+    margin-top: 4vh;
+    padding: 0.8vw 1.4vw;
+    border-radius: 25px;
+    border: none;
+}
+
+
+.container > div:nth-child(1) > button {
+    color: hsl(31, 77%, 52%);
+}
+
+.container > div:nth-child(2) > button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container > div:nth-child(3) > button {
+    color: hsl(179, 100%, 13%);
+}
+
+.container > div:nth-child(1) > button:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+.container > div:nth-child(2) > button:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+.container > div:nth-child(3) > button:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+
+.item button:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.attribution {
+    text-align: center;
+}
+
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    
+    .container {
+        flex-direction: column;
+        margin: 15vh auto;
+        width: 80%;
+    }
+
+    .item {
+        width: 90%;
+        padding: 9vw 8vw;
+        box-sizing: border-box;
+    }
+
+    .item img {
+        width: 14vw;
+    }
+
+    .item .head {
+        margin-top: 2.5vw;
+        font-size: 4.2vw;
+    }
+
+    .item .para {
+        margin-top: 2vh;
+        width: 90%;
+        height: auto;
+    }
+    
+    .item p {
+        font-size: 3vw;
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 3vh;
+    }
+
+    .item button {
+        font-size: 3.2vw;
+        margin-top: 2.2vh;
+        padding: 2vw 3.3vw;
+    }
+
+}
