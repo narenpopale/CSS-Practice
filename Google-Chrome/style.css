@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #353535;
+}
+
+.nav {
+    padding: 0 2vw;
+    height: 10vh;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav .item {
+    margin: 0 1.5vw;
+}
+
+.nav .txt {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
