@@ -4,13 +4,15 @@
 }
 
 body {
+    font-family: "Roboto", sans-serif;
     background-color: #353535;
+    box-shadow: inset 0px 30px 40px 0px rgba(0, 0, 0, 0.5);
 }
 
 .nav {
+    font-size: 13px;
     padding: 0 2vw;
     height: 10vh;
-    border: 2px solid white;
     color: white;
     display: flex;
     justify-content: end;
@@ -18,11 +20,172 @@ body {
 }
 
 .nav .item {
-    margin: 0 1.5vw;
-}
-
-.nav .txt {
+    margin: 0 1.5vh;
     height: 10vh;
     display: flex;
     align-items: center;
+}
+
+.nav .item:hover {
+    cursor: pointer;
+}
+
+.nav .txt:hover {
+    text-decoration: underline;
+}
+
+.nav .round:hover {
+    border-radius: 50%;
+    height: 5vh;
+    background-color: #a9a9a975;
+}
+
+.nav svg {
+    fill: rgba(255, 255, 255, .87);
+}
+
+.nav .acc {
+    font-size: 15px;
+    width: 5vh;
+    height: 5vh;
+    background-color: #C2185B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+}
+
+.container .head {
+    height: 92px;
+    width: 272px;
+    -webkit-mask: url('images/google_logo.svg') no-repeat center / contain;
+    background-color: #EEEEEE;
+}
+
+.container .search {
+    padding: 0 10vh;
+    height: 7vh;
+    width: 90vh;
+    display: flex;
+}
+
+.container .glass {
+    background-color: white;
+    width: 10%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input {
+    font-size: 15px;
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.container .mic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 5%;
+}
+
+.mic img, .lens img {
+    cursor: pointer;
+}
+
+.container .lens {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 10%;
+}
+
+.glass img {
+    width: 20px;
+}
+
+.mic img {
+    width: 20px;
+}
+
+.lens img {
+    width: 20px;
+}
+
+.shortcut {
+    font-size: 13px;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.shortcut:hover {
+    background-color: #a9a9a975;
+    cursor: pointer;
+}
+
+.shortcut .add {
+    -webkit-mask: url('images/add.svg') no-repeat center / contain;
+    width: 24px;
+    height: 24px;
+    -webkit-mask-size: 100%;
+    background-color: white;
+}
+
+.shortcut .addlogo {
+    background-color: #2A2A2A;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .circle {
+    background-color: #151515;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer .circle:hover {
+    cursor: pointer;
+    background-color: #1515158a;    
+}
+
+.footer .pencil {
+    -webkit-mask: url('images/icon_pencil.svg') no-repeat center / contain;
+    width: 16px;
+    height: 16px;
+    -webkit-mask-size: 100%;
+    background-color: white;
 }
